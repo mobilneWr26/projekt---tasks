@@ -8,7 +8,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="TaskMaster"
+        android:text="Tasks"
         android:textSize="28sp"
         android:textStyle="bold"
         android:textColor="#4CAF50"

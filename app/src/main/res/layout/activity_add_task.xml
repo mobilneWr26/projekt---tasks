@@ -23,7 +23,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <!-- 🔥 KATEGORIA -->
         <TextView
             android:text="Kategoria"
             android:textStyle="bold"
@@ -36,7 +35,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <!-- 🔥 PRIORYTET -->
         <TextView
             android:text="Priorytet"
             android:textStyle="bold"

@@ -4,10 +4,12 @@ package com.example.projektaplikacjemobilne;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tekstWitaj;
     ListView listaZadan;
-    Button przyciskDodaj;
+    Button przyciskDodaj, przyciskWyloguj;
 
     BazaDanychZadania baza;
     ArrayList<String> lista;
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         tekstWitaj = findViewById(R.id.tekstWitaj);
         listaZadan = findViewById(R.id.listaZadan);
         przyciskDodaj = findViewById(R.id.przyciskDodaj);
+        przyciskWyloguj = findViewById(R.id.przyciskWyloguj);
 
         baza = new BazaDanychZadania(this);
         userId = getIntent().getIntExtra("user_id", -1);
@@ -65,6 +68,18 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
         wczytaj();
+
+        przyciskWyloguj.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(i);
+                        finish();
+                        Toast.makeText(MainActivity.this, "Wylogowano", Toast.LENGTH_LONG).show();
+                    }
+                }
+        );
     }
 
     // to uruchamia sie po powrocie do tej aktywnosci/ekranu

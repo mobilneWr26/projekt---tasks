@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- NAZWA ZADANIA -->
         <Button
             android:id="@+id/btnBack"
             android:text="← Wróć"
@@ -27,7 +26,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <!-- OPIS -->
         <TextView
             android:id="@+id/tekstOpis"
             android:layout_marginTop="10dp"
@@ -36,7 +34,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <!-- DATA DODANIA -->
         <TextView
             android:id="@+id/tekstData"
             android:layout_marginTop="10dp"
@@ -44,7 +41,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <!-- DEADLINE -->
         <TextView
             android:id="@+id/tekstDeadline"
             android:layout_marginTop="10dp"
@@ -54,7 +50,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <!-- LICZNIK CZASU -->
         <TextView
             android:id="@+id/tekstCzas"
             android:layout_marginTop="5dp"
@@ -63,7 +58,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <!-- STATUS CHECKBOX -->
         <CheckBox
             android:id="@+id/checkStatus"
             android:text="Do zrobienia"
@@ -79,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <!-- PRZYCISK USUŃ -->
+
         <Button
             android:id="@+id/przyciskUsun"
             android:text="Usuń zadanie"
