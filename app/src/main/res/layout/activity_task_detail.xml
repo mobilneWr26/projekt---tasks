@@ -1,10 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TaskDetailActivity">
+    android:background="#F5F5F5">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- NAZWA ZADANIA -->
+        <Button
+            android:id="@+id/btnBack"
+            android:text="← Wróć"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tekstNazwa"
+            android:text="Nazwa"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- OPIS -->
+        <TextView
+            android:id="@+id/tekstOpis"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- DATA DODANIA -->
+        <TextView
+            android:id="@+id/tekstData"
+            android:layout_marginTop="10dp"
+            android:textColor="#777777"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- DEADLINE -->
+        <TextView
+            android:id="@+id/tekstDeadline"
+            android:layout_marginTop="10dp"
+            android:textColor="#FF5722"
+            android:textStyle="bold"
+            android:text="Brak deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- LICZNIK CZASU -->
+        <TextView
+            android:id="@+id/tekstCzas"
+            android:layout_marginTop="5dp"
+            android:textColor="#D32F2F"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- STATUS CHECKBOX -->
+        <CheckBox
+            android:id="@+id/checkStatus"
+            android:text="Do zrobienia"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/przyciskEdytuj"
+            android:text="Edytuj zadanie"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFC107"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- PRZYCISK USUŃ -->
+        <Button
+            android:id="@+id/przyciskUsun"
+            android:text="Usuń zadanie"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
