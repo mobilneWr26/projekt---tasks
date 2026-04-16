@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.TaskMaster" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Tasks" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">#4CAF50</item>
         <item name="colorPrimaryVariant">#388E3C</item>
         <item name="colorOnPrimary">#FFFFFF</item>
